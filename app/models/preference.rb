@@ -5,11 +5,7 @@ class Preference < ActiveRecord::Base
   end
 
   def artist_sort_order=(sort_method) #control default sort order of /artists page
-    if sort_method.downcase == 'desc'
-       sort('name desc')
-     elsif sort_method.downcase == 'asc'
-       sort('name asc')
-     end
+    sort_method
   end
 
   def allow_create_songs(selection) #turn on and off
