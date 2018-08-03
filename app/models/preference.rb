@@ -8,12 +8,8 @@ class Preference < ActiveRecord::Base
     sort_method
   end
 
-  def allow_create_songs(selection) #turn on and off
-    if selection == true || selection.downcase == 'true'
-      true
-    elsif selection == false || selection.downcase == 'false'
-      false
-    end
+  def allow_create_songs=(selection) #turn on and off
+    selection
   end
 
   def allow_create_artists=(artist_selection)
