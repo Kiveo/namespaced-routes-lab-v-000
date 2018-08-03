@@ -5,9 +5,11 @@ class Preference < ActiveRecord::Base
   end
 
   def artist_sort_order=(sort_method) #control default sort order of /artists page
-    sort_method
+    @sort_method = sort_method
   end
-
+  def artist_sort_order
+    @sort_method
+  end
   def allow_create_songs=(selection) #turn on and off
     selection
   end
