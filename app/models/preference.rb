@@ -16,7 +16,7 @@ class Preference < ActiveRecord::Base
      end
   end
 
-  def allow_new_songs #turn on and off
+  def allow_create_songs #turn on and off
 
   end
 
