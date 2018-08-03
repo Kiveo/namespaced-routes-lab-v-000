@@ -24,10 +24,10 @@ class Preference < ActiveRecord::Base
     end
   end
 
-  def allow_create_artists(selection)
-    if selection == true || selection.downcase == 'true'
+  def allow_create_artists(artist_selection)
+    if artist_selection == true || artist_selection.downcase == 'true'
       true
-    elsif selection == false || selection.downcase == 'false'
+    elsif artist_selection == false || artist_selection.downcase == 'false'
       false
     end
   end
