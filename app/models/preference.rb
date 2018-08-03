@@ -16,4 +16,10 @@ class Preference < ActiveRecord::Base
      end
   end
 
+  def allow_new_songs
+  end 
+
+  def allow_new_artists
+  end 
+  
 end
