@@ -20,7 +20,7 @@ class Preference < ActiveRecord::Base
 
   end
 
-  def allow_create_artists
+  def self.allow_create_artists
   end
 
 end
