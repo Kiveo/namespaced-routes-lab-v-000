@@ -10,9 +10,9 @@ class Preference < ActiveRecord::Base
 
   def artist_sort_order=(sort_method) #control default sort order of /artists page
     if sort_method.downcase == 'desc'
-       sort('name desc')
+       'desc'
      elsif sort_method.downcase == 'asc'
-       sort('name asc')
+       'asc'
      end
   end
 
