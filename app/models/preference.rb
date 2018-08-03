@@ -13,7 +13,7 @@ class Preference < ActiveRecord::Base
   end
 
   def allow_create_artists=(artist_selection)
-    artist_selection
+    @artist_selection = artist_selection
   end
 
 end
