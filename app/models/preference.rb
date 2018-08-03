@@ -16,8 +16,12 @@ class Preference < ActiveRecord::Base
      end
   end
 
-  def allow_create_songs #turn on and off
-
+  def allow_create_songs(selection) #turn on and off
+    if selection == true || selection.downcase == 'true'
+      true
+    elsif selection == false || selection.downcase == 'false'
+      false
+    end
   end
 
   def allow_create_artists
