@@ -1,11 +1,7 @@
 class Preference < ActiveRecord::Base
 
-  def song_sort_order(song, sort_direction) #controls asc or desc?
-    if sort_direction.downcase == 'asc'
-      song.sort('title asc')
-    elsif sort_direction.downcase == 'desc'
-      song.sort('title desc')
-    end
+  def song_sort_order=(sort_direction) #controls asc or desc?
+    sort_direction
   end
 
   def artist_sort_order=(sort_method) #control default sort order of /artists page
